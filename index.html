@@ -3,13 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Foxy Gaems</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="img\favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img\favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img\favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img\favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img\favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img\favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img\favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img\favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img\favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img\favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img\favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img\favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img\favicon/favicon-16x16.png">
+<link rel="manifest" href="img\favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="img\favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <nav class="navbar sticky-top navbar-expand-xl navbar-dark bg-danger">
     <div class="container-fluid">
-       <a class="navbar-brand" href="#">
+       <a class="navbar-brand" href="">
         <img src="img/Foxy Gaems logo.png" width="30px" height="30px" class="d-inline-block align-top" alt=""> 
         Foxy Gaems
        </a>
@@ -19,19 +38,19 @@
        <div class="collapse navbar-collapse show" id="navbarBasic">
          <ul class="navbar-nav me-auto mb-2 mb-xl-0">
             <li class="nav-item">
-               <a class="nav-link active" aria-current="page" href="#">Главная</a>
+               <a class="nav-link active" aria-current="page" href="#" onclick="$('#projects').hide(); $('#main').show(); $('#YouTube').hide(); return false;">Главная</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Проекты</a>
+                <a class="nav-link active" aria-current="page" href="#" onclick="$('#projects').show(); $('#main').hide(); $('#YouTube').hide();">Проекты</a>
              </li>
 
              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">YouTube</a>
+                <a class="nav-link active" aria-current="page" href="#" onclick="$('#projects').hide(); $('#main').hide(); $('#YouTube').show();">YouTube</a>
              </li>
 
              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Discord</a>
+                <a class="nav-link active" aria-current="page" href="https://discord.gg/CMSTtpjkuV">Discord</a>
              </li>
          </ul>
        </div>
@@ -39,7 +58,7 @@
 
     
  </nav>
- <div class="container mt-3">
+ <div class="container mt-3" id="projects">
     <div class="row">
         <div class="col-sm-4">
             <div class="card bg-danger" style="width: 18rem;">
@@ -48,11 +67,29 @@
                         FMessenger
                     </div>
                     
-                    <img class="card-img-top" src="" alt="Скриншо1.png">
+                    <img class="card-img-top" src="img/edrt_H3wyjGih4T.png" alt="Скриншот1.png">
                     
-                    <p class="card-text">Описание</p>
+                    <p class="card-text">Описание: </p>
                     <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placment="top" title="Всё что под руку попадётся">
-                        Информациия
+                        Подробнее
+                    </button>
+                </div>
+
+            </div>
+         </div>
+
+         <div class="col-sm-4">
+            <div class="card bg-danger" style="width: 18rem;">
+                <div class="card-body">
+                    <div class="card-header">
+                        FoxyOS
+                    </div>
+                    
+                    <img class="card-img-top" src="img/VirtualBoxVM_SHwfGTWtkt.png" alt="Скриншот1.png">
+                    
+                    <p class="card-text">Описание: система основаная на исходном коде ReactOS (<a>https://reactos.org</a>)</p>
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placment="top" title="Всё что под руку попадётся">
+                        Подробнее
                     </button>
                 </div>
 
@@ -60,5 +97,19 @@
          </div>
     </div>
 </div>
+<div id="main">
+    <H1 style="color: white; font-family: Arial, Helvetica, sans-serif;">Это главная страница официально сайта Foxy Gaems</H1>
+</div>
+<div id="YouTube">
+    <h1 style="color: white; font-family: Arial, Helvetica, sans-serif;">Здесь вы можете посмотреть самое новое видео на канале.</h1>
+    <h2 style="color: white; font-family: Arial, Helvetica, sans-serif; font-size: medium;">А так же подписывайтесь на сам канал <a href="https://www.youtube.com/channel/@FoxyGaemsOfficial">https://www.youtube.com/channel/@FoxyGaemsOfficial</a></h2>
+    <img src="img/Old monitor.png">
+    <iframe  width="350" height="190" src="https://www.youtube.com/embed/xhypKlMj6hY?si=H2lES2tAJcnNyeHf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 270px; left: 65px;"></iframe>
+</div>
+<script>
+    $('#projects').hide()
+    $("#main").show();
+    $("#YouTube").hide();
+</script>
 </body>
 </html>
