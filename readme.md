@@ -1,3 +1,1 @@
-Велком то фокси джэймс
-
-не крадите мой недо сайт пжпжжпжппжжпжпжпж
+Welcome to Foxy Gaems Ofiicial WebSite Source!
